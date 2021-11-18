@@ -6,11 +6,9 @@ function computerPlay() {
 }
 
 function playRound() {
+  let result;
   let playerSelection = prompt("What's your selection?");
   const choiceSelected = computerPlay();
-  let result;
-  let scoreBoard =
-    "Player Score: " + playerScore + " Computer Score: " + computerScore;
 
   if (playerSelection.toLowerCase() == "rock" && choiceSelected == "Paper") {
     result = "You Lose! Paper beats Rock";
@@ -64,6 +62,8 @@ function playRound() {
     result = "Apa Lanjiao?";
   }
   console.log(result);
+  let scoreBoard =
+    "Player Score: " + playerScore + " Computer Score: " + computerScore;
   console.log(scoreBoard);
 }
 
