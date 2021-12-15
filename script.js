@@ -5,6 +5,18 @@ body.style.fontFamily = "'Oswald', sans-serif";
 body.style.fontWeight = "bold";
 body.style.fontSize = "30px";
 
+const headingDiv = document.createElement("div");
+body.appendChild(headingDiv);
+const heading = document.createElement("h1");
+const headingText = document.createTextNode(
+  "Ultimate Rock Paper Scissors By Max"
+);
+heading.style.textAlign = "center";
+heading.style.color = "#2f2f2f";
+heading.style.textDecoration = "underline";
+heading.appendChild(headingText);
+headingDiv.appendChild(heading);
+
 // Score Div
 const scoreDiv = document.createElement("div");
 scoreDiv.classList.add("scoreDiv");
